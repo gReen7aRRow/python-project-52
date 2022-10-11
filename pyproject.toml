@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = ""
+authors = ["gReen7aRRow <f.gusarov@inbox.ru>"]
+repository = "https://github.com/gReen7aRRow/python-project-52.git"
+packages = [
+    { include = "task_manager" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.1.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+gunicorn = "^20.1.0"
+
+[tool.poetry.scripts]
+task_manager = "task_manager.scripts.task_manager:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
