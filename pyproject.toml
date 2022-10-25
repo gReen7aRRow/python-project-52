@@ -12,7 +12,6 @@ packages = [
 python = "^3.8"
 Django = "^4.1.2"
 python-dotenv = "^0.21.0"
-gunicorn = "^20.1.0"
 django-bootstrap4 = "^22.2"
 django-filter = "^22.1"
 rollbar = "^0.16.3"
@@ -23,6 +22,13 @@ gunicorn = "^20.1.0"
 
 [tool.poetry.scripts]
 task_manager = "task_manager.scripts.task_manager:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+mypy = "^0.982"
+django-stubs = "^1.12.0"
+pytest-django = "^4.5.2"
+coverage = "^6.5.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
