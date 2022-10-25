@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block title %}{% translate 'LoginUsers' %}
+{% endblock %}
+
+
+{% block content %}
+<div class="container wrapper flex-grow-1">
+    <h1>{% translate 'LoginUsers' %}</h1>
+    <form role="form" method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+             <button type="submit" class="btn btn-outline-primary">{% translate 'LoginButton' %}</button>
+        {% endbuttons %}
+    </form>
+</div>
+{% endblock %}

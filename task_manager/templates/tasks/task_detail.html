@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block title %}
+{% trans 'Tasks' %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container wrapper flex-grow-1 ">
+    <h2>{% trans 'Tasks' %}</h2>
+    <div class="card card-header bg-secondary text-white">
+      <h3>{{ task.name }}</h2>
+    </div>
+    <div class="card-body bg-light">
+      <p>{{ task.description }}</p>
+      <hr>
+      <div class="container">
+        <div class="row p-1">
+            <div class="col">{% trans 'TaskCreator' %}</div>
+            <div class="col">{{ task.creator }}</div>
+        </div>
+        <div class="row p-1">
+            <div class="col">{% trans 'TaskExecutor' %}</div>
+            <div class="col">{{ task.executor }}</div>
+        </div>
+        <div class="row p-1">
+            <div class="col">{% trans 'TaskStatus' %}</div>
+            <div class="col">{{ task.status }}</div>
+        </div>
+        <div class="row p-1">
+            <div class="col">{% trans 'TaskCreateDate' %}</div>
+            <div class="col">{{ task.added_at|date:'d-m-Y H:i' }}</div>
+        </div>
+        <div class="row p-1">
+          <div class="col">
+            <h6>{% trans 'Labels' %}:</h6>
+            <ul>
+            {% for label in task.labels.all %}
+                <li>{{ label.name }}</li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="row p-1">
+          <div class="col">
+            <a href="{% url 'update_task' pk=task.id %}">{% trans 'Update' %}</a>
+            <br>
+            <a href="{% url 'delete_task' pk=task.id %}">{% trans 'Delete' %}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

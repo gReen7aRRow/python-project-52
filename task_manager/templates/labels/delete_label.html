@@ -1,0 +1,14 @@
+{% extends "delete_base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block title %}
+{% trans 'DeleteLabel' %}
+{% endblock %}
+
+{% block delete_title %}
+{% trans 'DeleteLabel' %}
+{% endblock %}
+{% block delete_question %}
+{% trans 'AreYouSureToDeleteLabel' %}{{ label.name }}'?'
+{% endblock %}

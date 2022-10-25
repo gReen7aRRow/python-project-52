@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% load i18n %}
+{% block content %}
+<div class="container wrapper flex-grow-1">
+    <h1>{% block delete_title %}{% endblock %}</h1>
+    <p>{% block delete_question %}{% endblock %}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="Submit" class="btn btn-danger">{% trans 'DeleteConfirm' %}</button>
+    </form>
+</div>
+{% endblock %}

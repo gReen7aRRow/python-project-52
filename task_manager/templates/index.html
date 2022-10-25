@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{# Load the tag library #}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block title %}
+{% trans 'TaskManager' %}
+{% endblock %}
+
+{% block content %}
+<div class="container wrapper flex-grow-1">
+    <h1>
+        {% trans 'WelcomeMessage' %}
+    </h1>
+</div>
+{% endblock %}

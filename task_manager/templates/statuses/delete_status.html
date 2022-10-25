@@ -1,0 +1,14 @@
+{% extends "delete_base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block title %}
+{% trans 'DeleteStatus' %}
+{% endblock %}
+
+{% block delete_title %}
+{% trans 'DeleteStatus' %}
+{% endblock %}
+{% block delete_question %}
+{% trans 'AreYouSureToDeleteStatus' %}{{ status.name }}'?'
+{% endblock %}
