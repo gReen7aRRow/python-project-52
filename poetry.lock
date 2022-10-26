@@ -91,7 +91,7 @@ toml = ["tomli"]
 name = "dj-database-url"
 version = "1.0.0"
 description = "Use Database URLs in your Django Application."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -143,7 +143,7 @@ Django = ">=3.2"
 name = "django-heroku"
 version = "0.3.1"
 description = "This is a Django library for Heroku apps."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -303,7 +303,7 @@ testing = ["pytest", "pytest-benchmark"]
 name = "psycopg2"
 version = "2.9.4"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -504,7 +504,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 name = "whitenoise"
 version = "6.2.0"
 description = "Radically simplified static file serving for WSGI applications"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -514,7 +514,7 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "31187faedd2be0583f65dc835209bc96a570db8a7ed3c6448e494c45d043508c"
+content-hash = "f514cb74f7cf3b684cce98ef35236dcce5424ab00c18c2bfd791dcab9b52f255"
 
 [metadata.files]
 asgiref = [
