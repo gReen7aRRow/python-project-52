@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-19 15:03+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: task_manager/templates/base.html:8
+msgid "MainTitle"
+msgstr "Менеджер задач Hexlet"
+
+#: task_manager/templates/base.html:16
+msgid "Description"
+msgstr "Менеджер задач"
+
+#: task_manager/templates/base.html:23
+#: task_manager/templates/users/users.html:7
+#: task_manager/templates/users/users.html:12
+msgid "Users"
+msgstr "Пользователи"
+
+#: task_manager/templates/base.html:27
+#: task_manager/templates/statuses/create_status.html:6
+#: task_manager/templates/statuses/create_status.html:10
+#: task_manager/templates/statuses/statuses.html:7
+#: task_manager/templates/statuses/statuses.html:12
+#: task_manager/templates/statuses/update_status.html:6
+#: task_manager/templates/statuses/update_status.html:10
+msgid "Statuses"
+msgstr "Статусы"
+
+#: task_manager/templates/base.html:30
+#: task_manager/templates/labels/create_label.html:6
+#: task_manager/templates/labels/create_label.html:10
+#: task_manager/templates/labels/labels.html:6
+#: task_manager/templates/labels/labels.html:11
+#: task_manager/templates/labels/update_label.html:6
+#: task_manager/templates/labels/update_label.html:10
+#: task_manager/templates/tasks/task_detail.html:38
+msgid "Labels"
+msgstr "Метки"
+
+#: task_manager/templates/base.html:33
+#: task_manager/templates/tasks/task_detail.html:6
+#: task_manager/templates/tasks/task_detail.html:12
+#: task_manager/templates/tasks/tasks.html:6
+#: task_manager/templates/tasks/tasks.html:11
+msgid "Tasks"
+msgstr "Задачи"
+
+#: task_manager/templates/base.html:40
+msgid "Logout"
+msgstr "Выход"
+
+#: task_manager/templates/base.html:44
+msgid "Login"
+msgstr "Вход"
+
+#: task_manager/templates/base.html:47
+msgid "Sign_in"
+msgstr "Регистрация"
+
+#: task_manager/templates/delete_base.html:10
+msgid "DeleteConfirm"
+msgstr "Да, удалить"
+
+#: task_manager/templates/index.html:7
+msgid "TaskManager"
+msgstr "Менеджер задач"
+
+#: task_manager/templates/index.html:13
+msgid "WelcomeMessage"
+msgstr "Добро пожаловать!"
+
+#: task_manager/templates/labels/create_label.html:14
+#: task_manager/templates/statuses/create_status.html:14
+#: task_manager/templates/tasks/task_create.html:14
+msgid "CreateButton"
+msgstr "Создать"
+
+#: task_manager/templates/labels/delete_label.html:6
+#: task_manager/templates/labels/delete_label.html:10
+msgid "DeleteLabel"
+msgstr "Удаление метки"
+
+#: task_manager/templates/labels/delete_label.html:13
+msgid "AreYouSureToDeleteLabel"
+msgstr "Вы уверены, что хотите удалить "
+
+#: task_manager/templates/labels/labels.html:12
+msgid "CreateLabel"
+msgstr "Создать метку"
+
+#: task_manager/templates/labels/labels.html:17
+#: task_manager/templates/statuses/statuses.html:18
+#: task_manager/templates/tasks/tasks.html:64
+msgid "Name"
+msgstr "Имя"
+
+#: task_manager/templates/labels/labels.html:27
+#: task_manager/templates/statuses/statuses.html:28
+#: task_manager/templates/tasks/task_detail.html:48
+#: task_manager/templates/tasks/tasks.html:82
+#: task_manager/templates/update_base.html:11
+#: task_manager/templates/users/users.html:32
+msgid "Update"
+msgstr "Изменить"
+
+#: task_manager/templates/labels/labels.html:29
+#: task_manager/templates/statuses/statuses.html:30
+#: task_manager/templates/tasks/task_detail.html:50
+#: task_manager/templates/tasks/tasks.html:84
+#: task_manager/templates/users/users.html:34
+msgid "Delete"
+msgstr "Удалить"
+
+#: task_manager/templates/statuses/delete_status.html:6
+#: task_manager/templates/statuses/delete_status.html:10
+msgid "DeleteStatus"
+msgstr "Удаление статуса"
+
+#: task_manager/templates/statuses/delete_status.html:13
+msgid "AreYouSureToDeleteStatus"
+msgstr "Вы уверены, что хотите удалить "
+
+#: task_manager/templates/statuses/statuses.html:13
+msgid "CreateStatus"
+msgstr "Создать статус"
+
+#: task_manager/templates/tasks/task_create.html:6
+#: task_manager/templates/tasks/task_create.html:10
+#: task_manager/templates/tasks/tasks.html:12
+msgid "CreateTask"
+msgstr "Создать задачу"
+
+#: task_manager/templates/tasks/task_delete.html:6
+#: task_manager/templates/tasks/task_delete.html:10
+msgid "DeleteTask"
+msgstr "Удаление задачи"
+
+#: task_manager/templates/tasks/task_delete.html:13
+msgid "AreYouSureToDeleteTask"
+msgstr "Вы уверены, что хотите удалить "
+
+#: task_manager/templates/tasks/task_detail.html:21
+#: task_manager/templates/tasks/tasks.html:66
+msgid "TaskCreator"
+msgstr "Автор"
+
+#: task_manager/templates/tasks/task_detail.html:25
+#: task_manager/templates/tasks/tasks.html:28
+#: task_manager/templates/tasks/tasks.html:67
+msgid "TaskExecutor"
+msgstr "Исполнитель"
+
+#: task_manager/templates/tasks/task_detail.html:29
+#: task_manager/templates/tasks/tasks.html:18
+#: task_manager/templates/tasks/tasks.html:65
+msgid "TaskStatus"
+msgstr "Статус"
+
+#: task_manager/templates/tasks/task_detail.html:33
+#: task_manager/templates/tasks/tasks.html:68
+#: task_manager/templates/users/users.html:20
+msgid "TaskCreateDate"
+msgstr "Дата создания"
+
+#: task_manager/templates/tasks/task_update.html:6
+#: task_manager/templates/tasks/task_update.html:10
+msgid "UpdateTask"
+msgstr "Изменение задачи"
+
+#: task_manager/templates/tasks/tasks.html:38
+msgid "TaskLabel"
+msgstr "Метка"
+
+#: task_manager/templates/tasks/tasks.html:51
+msgid "FilterTasks"
+msgstr "Только свои задачи"
+
+#: task_manager/templates/users/create_user.html:6
+msgid "CreateUsers"
+msgstr "Регистрация"
+
+#: task_manager/templates/users/create_user.html:10
+msgid "CreateUser"
+msgstr "Зарегистрировать"
+
+#: task_manager/templates/users/delete_user.html:6
+#: task_manager/templates/users/delete_user.html:10
+msgid "DeleteUser"
+msgstr "Удаление пользователя"
+
+#: task_manager/templates/users/delete_user.html:13
+msgid "AreYouSureToDeleteUser"
+msgstr "Вы уверены, что хотите удалить "
+
+#: task_manager/templates/users/login.html:6
+#: task_manager/templates/users/login.html:12
+msgid "LoginUsers"
+msgstr "Вход"
+
+#: task_manager/templates/users/login.html:18
+msgid "LoginButton"
+msgstr "Войти"
+
+#: task_manager/templates/users/update_user.html:6
+#: task_manager/templates/users/update_user.html:10
+msgid "UpdateUsers"
+msgstr "Изменение"
+
+#: task_manager/templates/users/users.html:18
+msgid "UserName"
+msgstr "Имя пользователя"
+
+#: task_manager/templates/users/users.html:19
+msgid "FullName"
+msgstr "Полное имя"
+
+#: task_manager/templates/users/users.html:38
+msgid "UsersNotFound"
+msgstr "Пользователи не найдены."
