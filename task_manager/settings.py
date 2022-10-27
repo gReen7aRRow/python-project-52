@@ -15,7 +15,6 @@ from dotenv import load_dotenv
 from django.urls import reverse_lazy
 import rollbar  # type: ignore
 import os
-import dj_database_url  # type: ignore
 
 
 load_dotenv()
@@ -33,7 +32,7 @@ SECRET_KEY = 'django-insecure-v9b_jg#r!*p3xlil9#io_-xhyib8+(wx)0v9gje#2j=w(l861^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG') is not None
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS = os.environ.get('localhost', '127.0.0.1').split(',')
 
 
 # Application definition
@@ -45,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
     'task_manager',
     'users.apps.UsersConfig',
     'statuses.apps.StatusesConfig',
@@ -119,11 +119,13 @@ AUTH_USER_MODEL = 'users.TaskUser'
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 

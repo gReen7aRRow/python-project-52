@@ -15,7 +15,7 @@ test-coverage:
     poetry run coverage xml
 
 run:
-	poetry run python manage.py runserver
+	poetry run python3 manage.py runserver
 
 migrate:
-	poetry run python manage.py migrate
+	poetry run python3 manage.py migrate
