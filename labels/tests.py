@@ -24,7 +24,7 @@ class LabelsTest(TestCase):
         self.assertTrue(Label.objects.filter(name="Test2"))
 
     def test_delete(self):
-        response = self.client.post('/labels/1/delete/')
+        response = self.client.post('/labels/2/delete/')
         self.assertEqual(response.status_code, 302)
         self.assertEqual(Label.objects.count(), 0)
 
