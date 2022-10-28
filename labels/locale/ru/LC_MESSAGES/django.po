@@ -30,7 +30,7 @@ msgstr "Метка успешно создана"
 
 #: labels/views.py:32
 msgid "SuccessUpdateLabel"
-msgstr "Метка успешно изменена"
+msgstr "Метка успешноизменена"
 
 #: labels/views.py:39
 msgid "SuccessDeleteLabel"
