@@ -8,7 +8,7 @@ from django.views.generic import CreateView, DeleteView, UpdateView
 from django.views.generic.list import ListView
 from .forms import LabelForm
 from .models import Label
-from tasks.models import Task
+from task_manager.apps.tasks.models import Task
 
 
 class LabelsView(LoginRequiredMixin, ListView):

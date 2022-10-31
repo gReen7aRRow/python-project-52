@@ -1,15 +1,15 @@
-from users.models import TaskUser
+from task_manager.apps.users.models import TaskUser
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
-from users.forms import RegistrationForm
+from task_manager.apps.users.forms import RegistrationForm
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 from django.shortcuts import redirect
 from django.utils.translation import gettext
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from tasks.models import Task
+from task_manager.apps.tasks.models import Task
 
 
 class UserCreateView(SuccessMessageMixin, CreateView):

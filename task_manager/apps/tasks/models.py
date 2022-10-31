@@ -1,9 +1,9 @@
 from django.db import models
 from django.db.models import Model
 from django.utils.translation import gettext
-from statuses.models import Status
-from users.models import TaskUser
-from labels.models import Label
+from task_manager.apps.statuses.models import Status
+from task_manager.apps.users.models import TaskUser
+from task_manager.apps.labels.models import Label
 
 
 class Task(Model):

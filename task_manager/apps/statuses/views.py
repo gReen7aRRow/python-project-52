@@ -8,7 +8,7 @@ from .forms import StatusForm
 from .models import Status
 from django.shortcuts import redirect
 from django.contrib import messages
-from tasks.models import Task
+from task_manager.apps.tasks.models import Task
 
 
 class StatusesView(LoginRequiredMixin, ListView):

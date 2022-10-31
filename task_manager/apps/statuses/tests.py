@@ -1,6 +1,6 @@
 from django.test import TestCase
 from .models import Status
-from users.models import TaskUser
+from task_manager.apps.users.models import TaskUser
 
 
 class StatusesTest(TestCase):

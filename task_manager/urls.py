@@ -15,16 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from users.views import UserLogoutView, UserLoginView
+from task_manager.apps.users.views import UserLogoutView, UserLoginView
 from .views import IndexView
 
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
-    path('users/', include('users.urls')),
-    path('statuses/', include('statuses.urls')),
-    path('tasks/', include('tasks.urls')),
-    path('labels/', include('labels.urls')),
+    path('users/', include('task_manager.apps.users.urls')),
+    path('statuses/', include('task_manager.apps.statuses.urls')),
+    path('tasks/', include('task_manager.apps.tasks.urls')),
+    path('labels/', include('task_manager.apps.labels.urls')),
     path('login/', UserLoginView.as_view(), name='login'),
     path('logout/', UserLogoutView.as_view(), name='logout'),
     path('admin/', admin.site.urls),
