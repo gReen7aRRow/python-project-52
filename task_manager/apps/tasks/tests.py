@@ -1,6 +1,5 @@
 from django.test import TestCase
 from django.urls import reverse_lazy
-from django.utils.translation import gettext_lazy
 from task_manager.apps.statuses.models import Status
 from task_manager.apps.users.models import TaskUser
 from .models import Task
@@ -34,7 +33,7 @@ class TasksTest(TestCase):
             executor=TaskUser.objects.get(username='user2'),
             creator=self.user1,
         )
-    
+
     def test_tasks_list(self):
         self.client.force_login(self.user1)
         response = self.client.get(reverse_lazy('tasks'))
