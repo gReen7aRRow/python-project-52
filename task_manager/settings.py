@@ -36,8 +36,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'webserver',
-    'leabruns-task-manager.herokuapp.com',
-    '.railway.app',
+    'leabruns-task-manager.up.railway.app',
 ]
 
 
