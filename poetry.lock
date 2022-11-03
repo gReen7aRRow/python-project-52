@@ -77,17 +77,6 @@ python-versions = ">=3.7"
 toml = ["tomli"]
 
 [[package]]
-name = "dj-database-url"
-version = "1.0.0"
-description = "Use Database URLs in your Django Application."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-Django = ">3.2"
-
-[[package]]
 name = "django"
 version = "3.2.3"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
@@ -472,7 +461,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "5c7745a78087678fa346365a0863fcf8cd6dea212e8d860c8050b168ac66a5e3"
+content-hash = "f543d3a30d8ec04ab4f3956d93e15ba47c53a026aa23544595c81d39c6da33ba"
 
 [metadata.files]
 asgiref = [
@@ -550,10 +539,6 @@ coverage = [
     {file = "coverage-6.5.0-cp39-cp39-win_amd64.whl", hash = "sha256:fc2af30ed0d5ae0b1abdb4ebdce598eafd5b35397d4d75deb341a614d333d987"},
     {file = "coverage-6.5.0-pp36.pp37.pp38-none-any.whl", hash = "sha256:1431986dac3923c5945271f169f59c45b8802a114c8f548d611f2015133df77a"},
     {file = "coverage-6.5.0.tar.gz", hash = "sha256:f642e90754ee3e06b0e7e51bce3379590e76b7f76b708e1a71ff043f87025c84"},
-]
-dj-database-url = [
-    {file = "dj-database-url-1.0.0.tar.gz", hash = "sha256:ccf3e8718f75ddd147a1e212fca88eecdaa721759ee48e38b485481c77bca3dc"},
-    {file = "dj_database_url-1.0.0-py3-none-any.whl", hash = "sha256:cd354a3b7a9136d78d64c17b2aec369e2ae5616fbca6bfbe435ef15bb372ce39"},
 ]
 django = [
     {file = "Django-3.2.3-py3-none-any.whl", hash = "sha256:7e0a1393d18c16b503663752a8b6790880c5084412618990ce8a81cc908b4962"},

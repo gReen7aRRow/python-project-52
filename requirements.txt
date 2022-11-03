@@ -59,6 +59,7 @@ pyparted==3.11.2
 pyRFC3339==1.1
 python-apt==2.0.0+ubuntu0.20.4.8
 python-debian===0.1.36ubuntu1
+python-dotenv==0.21.0
 python-xapp==2.0.2
 python-xlib==0.23
 pytz==2019.3
